@@ -10,7 +10,7 @@ Inspired by and borrows a lot of methods from [ColCarroll's ridge_map Python lib
 - Supports multiple map projections including mercator, web mercator, and any Proj4 valid cylindrical projections.
 - Doesn't support colormaps or elevation gradients.
 
-<img src="https://github.com/accudio/ridge-map/raw/main/.assets/everest.png" width="1000" height="380" loading="eager" alt="Ridge map of the Himalayas, centred around Mt Everest">
+<img src="https://github.com/accudio/ridge-map/raw/main/.assets/everest.png" loading="eager" alt="Ridge map of the Himalayas, centred around Mt Everest">
 
 ## Installation
 
@@ -93,7 +93,7 @@ await map.save({
 See the [examples directory](https://github.com/Accudio/ridge-map/tree/main/examples) for examples of what ridge map can produce and the code that produced it. If you've produced an interested ridge map or used it in an interesting way and would like it included in these examples, please let us know via an issue!
 
 <a href="https://github.com/Accudio/ridge-map/tree/main/examples">
-  <img src="https://github.com/accudio/ridge-map/raw/main/.assets/examples.png" width="1000" height="1000" loading="lazy" alt="Examples of ridge maps of different locations and in different colours">
+  <img src="https://github.com/accudio/ridge-map/raw/main/.assets/examples.png" loading="lazy" alt="Examples of ridge maps of different locations and in different colours">
 </a>
 
 ## Elevation data
