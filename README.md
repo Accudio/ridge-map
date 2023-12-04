@@ -34,8 +34,8 @@ For basic usage, import and create a new RidgeMap with your bounding box and run
 import RidgeMap from 'ridge-map'
 
 const map = new RidgeMap({
-	// include your bounding box from http://bboxfinder.com
-	bbox: [-3.886049,57.006752,-3.673875,57.184492],
+  // include your bounding box from http://bboxfinder.com
+  bbox: [-3.886049,57.006752,-3.673875,57.184492],
 })
 await map.getElevationData()
 await map.generate()
@@ -48,58 +48,53 @@ For advanced usage you can provide additional options:
 import RidgeMap from './src/index.js'
 
 const map = new RidgeMap({
-	// include your bounding box from http://bboxfinder.com
-	bbox: [-3.886049,57.006752,-3.673875,57.184492],
-	// additional projections, options include 'latlng' (default), 'mercator', 'web-mercator' and any proj4-valid cylindrical projection: https://www.npmjs.com/package/proj4
-	projection: 'web-mercator',
-	// alternate viewpoints, options include 'south' (default), 'west', 'north', and 'east'
-	viewpoint: 'north'
+  // Include your bounding box from http://bboxfinder.com
+  bbox: [-3.886049,57.006752,-3.673875,57.184492],
+  // Additional projections, options include 'latlng' (default), 'mercator', 'web-mercator'
+  // and any proj4-valid cylindrical projection: https://www.npmjs.com/package/proj4
+  projection: 'web-mercator',
+  // Alternate viewpoints, options include 'south' (default), 'west', 'north', and 'east'
+  viewpoint: 'north'
 })
 await map.getElevationData({
-	// number of lines (top to bottom), default 80
-	num: 100,
-	// number of points each line (left to right), default 300
-	points: 100,
-	// where to cache .hgt files, defaults to ~/cache/srtm
-	cache: './hgt-cache/'
+  // Number of lines (top to bottom), default 80
+  num: 100,
+  // Number of points each line (left to right), default 300
+  points: 100,
+  // Where to cache .hgt files, defaults to ~/.cache/srtm
+  cache: './hgt-cache/'
 })
 await map.generate({
-	// control how exaggerated vertical differences are, increase to make more dramatic. Default 40
-	verticalRatio: 100,
-	// delete the provided number of meters of data, useful for coasts, lakes or rivers. Set to 0 to disable (default)
-	waterNTile: 1,
-	// How few meters lines can change vertically within 3 points before removing, useful for elevated lakes and rivers. Set to 0 to disable (default)
-	lakeFlatness: 0.2,
-	// colour of lines, supporting any valid CSS colour format, default black
-	lineColour: '#f00',
-	// width of lines, as used on an SVG canvas with width 100, default 0.1
-	lineWidth: 1
+  // Control how exaggerated vertical differences are, increase to make more dramatic.
+	// Default 40
+  verticalRatio: 100,
+  // Delete the provided number of meters of data, useful for coasts, lakes or rivers.
+	// Set to 0 to disable (default)
+  waterNTile: 1,
+  // How few meters lines can change vertically within 3 points before removing, useful
+	// for elevated lakes and rivers. Set to 0 to disable (default)
+  lakeFlatness: 0.2,
+  // colour of lines, supporting any valid CSS colour format, default black
+  lineColour: '#f00',
+  // width of lines, as used on an SVG canvas with width 100, default 0.1
+  lineWidth: 1
 })
 //
 await map.save({
-	// filename to output
-	name: 'our-output.svg',
-	// whether to optimise SVG using SVGO, producing smaller, nicer outputs. Defaults to true
-	svgo: false
+  // filename to output
+  name: 'our-output.svg',
+  // whether to optimise SVG using SVGO, producing smaller, nicer outputs. Defaults to true
+  svgo: false
 })
 ```
 
 ## Examples
 
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
-	<a href="https://github.com/accudio/ridge-map/raw/main/examples/british-isles.md">
-		<img src="https://github.com/accudio/ridge-map/raw/main/.assets/british-isles-square.png" width="800" height="800" loading="lazy" alt="The British Isles in white on navy">
-	</a>
-	<a href="https://github.com/accudio/ridge-map/raw/main/examples/vanoise.md">
-		<img src="https://github.com/accudio/ridge-map/raw/main/.assets/vanoise-square.png" width="800" height="800" loading="lazy" alt="Vanoise national park in black on white">
-	</a>
-	<a href="https://github.com/accudio/ridge-map/raw/main/examples/cairngorms.md">
-		<img src="https://github.com/accudio/ridge-map/raw/main/.assets/cairngorms-square.png" width="800" height="800" loading="lazy" alt="Cairngorm Mountains in Red on pale orange">
-	</a>
-	<a href="https://github.com/accudio/ridge-map/raw/main/examples/white-mountains.md">
-		<img src="https://github.com/accudio/ridge-map/raw/main/.assets/white-mountains-square.png" width="800" height="800" loading="lazy" alt="The White Mountains black on light grey">
-	</a>
-</div>
+See the [examples directory](https://github.com/Accudio/ridge-map/tree/main/examples) for examples of what ridge map can produce and the code that produced it. If you've produced an interested ridge map or used it in an interesting way and would like it included in these examples, please let us know via an issue!
+
+<a href="https://github.com/Accudio/ridge-map/tree/main/examples">
+  <img src="https://github.com/accudio/ridge-map/raw/main/.assets/examples.png" width="1000" height="1000" loading="lazy" alt="Examples of ridge maps of different locations and in different colours">
+</a>
 
 ## Elevation data
 
@@ -109,7 +104,7 @@ You can provide your own data by providing `.hgt` files in the cache directory w
 
 ## License and Contributing
 
-This project is licensed under the MIT license. The full license is included at [LICENSE.md](https://github.com/accudio/ridge-map), or at [mit-license.org](https://mit-license.org).
+This project is licensed under the MIT license. The full license is included at [LICENSE.md](https://github.com/Accudio/ridge-map/blob/main/LICENSE.md), or at [mit-license.org](https://mit-license.org).
 
 Contributions are accepted, this is a list of potential additions or improvements that would be great to make:
 
