@@ -1,0 +1,37 @@
+{
+  "name": "ridge-map",
+  "version": "1.0.0",
+  "description": "Ridge map uses elevation data to create beautiful SVG visualisations of elevation data",
+  "author": "Alistair Shepherd <alistair@accudio.com>",
+  "license": "MIT",
+  "keywords": [
+    "elevation",
+    "svg",
+    "art"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/accudio/ridge-map.git"
+  },
+  "bugs": {
+    "url": "https://github.com/accudio/ridge-map/issues"
+  },
+  "type": "module",
+  "main": "src/index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "types": "tsc src/index.js --declaration --allowJs --emitDeclarationOnly --outDir types",
+		"lint": "eslint src",
+		"lint:fix": "eslint --fix src"
+  },
+  "dependencies": {
+    "node-hgt": "^1.2.3",
+    "paper-jsdom": "^0.12.17",
+    "proj4": "^2.9.2",
+    "svgo": "^3.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.55.0",
+    "typescript": "^5.3.2"
+  }
+}
