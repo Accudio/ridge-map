@@ -1,6 +1,6 @@
 # British Isles
 
-<img src="https://github.com/accudio/ridge-map/raw/main/.assets/british-isles.png" width="2000" height="3028" loading="eager" alt="The British Isles in white on navy">
+<img src="https://github.com/accudio/ridge-map/raw/main/.assets/british-isles.png" loading="eager" alt="The British Isles in white on navy">
 
 ```js
 import RidgeMap from 'ridge-map'

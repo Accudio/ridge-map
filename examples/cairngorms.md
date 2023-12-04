@@ -1,6 +1,6 @@
 # Cairngorm Mountains
 
-<img src="https://github.com/accudio/ridge-map/raw/main/.assets/cairngorms.png" width="2000" height="857" loading="eager" alt="Cairngorm Mountains in Red on pale orange">
+<img src="https://github.com/accudio/ridge-map/raw/main/.assets/cairngorms.png" loading="eager" alt="Cairngorm Mountains in Red on pale orange">
 
 ```js
 import RidgeMap from 'ridge-map'
