@@ -1,6 +1,6 @@
 {
   "name": "ridge-map",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Ridge map uses elevation data to create beautiful SVG visualisations of elevation data",
   "author": "Alistair Shepherd <alistair@accudio.com>",
   "license": "MIT",

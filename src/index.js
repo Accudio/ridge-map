@@ -422,8 +422,12 @@ class RidgeMap {
 		let values = this._data;
 
 		// get min and max elevation
-		const min = Math.min(...values.flat());
-		const max = Math.max(...values.flat());
+		let min = values[0][0];
+		let max = values[0][0];
+		for (const value of values.flat()) {
+			if (value < min) min = value;
+			if (value > max) max = value;
+		}
 
 		// remap elevation onto 0-verticalRatio
 		let oneMeter = 1 / (max - min) * verticalRatio;
