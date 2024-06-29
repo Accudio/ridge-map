@@ -2,7 +2,7 @@
 
 > Has slight edits where the libraries differ to show matching the ridge_map python example
 
-<img src="https://github.com/accudio/ridge-map/raw/main/.assets/vanoise.png" loading="eager" alt="The White Mountains black on light grey">
+<img src="https://github.com/accudio/ridge-map/raw/main/.assets/white-mountains.png" loading="eager" alt="The White Mountains black on light grey">
 
 ```js
 import RidgeMap from 'ridge-map'
